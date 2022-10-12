@@ -49,11 +49,10 @@
         android:hint="Password"
         android:longClickable="false"
         android:paddingLeft="20dp"
-
-        android:password="true"
         android:textColor="@color/black"
         android:textColorHint="#7A7878"
-        tools:ignore="Deprecated" />
+        android:inputType="textPassword"
+        />
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,9 +72,9 @@
         android:layout_height="46dp"
         android:layout_below="@id/show_password"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="20dp"
         android:layout_toEndOf="@+id/btn_cancel"
         android:background="@color/design_default_color_on_secondary"
@@ -121,9 +120,10 @@
         android:textColor="@color/white"
         android:textSize="19dp"
         android:textStyle="bold"
-        android:layout_below="@id/forgetPass"
+        android:layout_above="@id/socialicons"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+
         />
 
     <LinearLayout
@@ -132,6 +132,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
         android:gravity="center"
+        android:id="@+id/socialicons"
         >
         <ImageView
             android:layout_width="48dp"
