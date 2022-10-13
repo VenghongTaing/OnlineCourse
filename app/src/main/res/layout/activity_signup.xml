@@ -67,7 +67,7 @@
         android:id="@+id/btnSignup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="17dp"
         android:background="@drawable/btn_bg"
         android:text="Sign up"
         app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
