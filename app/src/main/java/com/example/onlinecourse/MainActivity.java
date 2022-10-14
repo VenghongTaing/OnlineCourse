@@ -2,6 +2,7 @@ package com.example.onlinecourse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -10,7 +11,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent show_loginform = new Intent(MainActivity.this, LoginForm.class);
+        Intent show_signupform = new  Intent(MainActivity.this, Signup.class);
+        startActivity(show_signupform);
+
     }
 
-    //hello
+
 }
