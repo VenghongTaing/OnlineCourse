@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Intent show_loginform = new Intent(MainActivity.this, NewLoginForm.class);
         Intent show_signupform = new Intent(MainActivity.this, Signup.class);
-        startActivity(show_loginform);
+        Intent show_menuForm = new Intent(MainActivity.this, customNavigation.class);
+        startActivity(show_menuForm);
         addListenerOnButtonClick();
 
 
