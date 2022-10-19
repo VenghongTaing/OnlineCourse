@@ -1,11 +1,21 @@
 package com.example.onlinecourse;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.tabs.TabItem;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Toolbar mToolbar;
+    private FloatingActionButton Fab_add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +26,27 @@ public class MainActivity extends AppCompatActivity {
 //        startActivity(show_signupform);
 
         //start activity with dashboard
-        Intent show_dashboard = new Intent(MainActivity.this, Dashboard.class);
-        startActivity(show_dashboard);
+//        Intent show_dashboard = new Intent(MainActivity.this, Dashboard.class);
+//        startActivity(show_dashboard);
 
+        mToolbar = (Toolbar) findViewById(R.id.main_toolbar);
+        setSupportActionBar(mToolbar);
+
+        Fab_add = (FloatingActionButton) findViewById(R.id.fab_add);
+        Fab_add.setOnClickListener(v -> {
+            Intent push_dashboard = new  Intent(MainActivity.this, Dashboard.class);
+            startActivity(push_dashboard);
+        });
     }
 
+    //Set the menu to the toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
 
+        getSupportActionBar().setTitle("Student Management System");
+        getMenuInflater().inflate(R.menu.menu, menu);
+
+        return true;
+    }
 }
