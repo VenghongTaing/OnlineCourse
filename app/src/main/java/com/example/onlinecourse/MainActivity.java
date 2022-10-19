@@ -12,8 +12,6 @@ import android.view.MenuItem;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabItem;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
@@ -23,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent show_loginform = new Intent(MainActivity.this, NewLoginForm.class);
-        Intent show_signupform = new Intent(MainActivity.this, Signup.class);
-        Intent show_menuForm = new Intent(MainActivity.this, customNavigation.class);
-        startActivity(show_menuForm);
-        addListenerOnButtonClick();
+//        Intent show_loginform = new Intent(MainActivity.this, LoginForm.class);
+//        Intent show_signupform = new  Intent(MainActivity.this, Signup.class);
+//        startActivity(show_signupform);
+
+        //start activity with dashboard
+//        Intent show_dashboard = new Intent(MainActivity.this, Dashboard.class);
+//        startActivity(show_dashboard);
 
         mToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mToolbar);
@@ -37,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
             Intent push_dashboard = new  Intent(MainActivity.this, Dashboard.class);
             startActivity(push_dashboard);
         });
-    }
-
-    private void addListenerOnButtonClick() {
     }
 
     //Set the menu to the toolbar
@@ -52,5 +49,4 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-
 }
