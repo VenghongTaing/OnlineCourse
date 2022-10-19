@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void addListenerOnButtonClick() {
+    }
+
     //Set the menu to the toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
