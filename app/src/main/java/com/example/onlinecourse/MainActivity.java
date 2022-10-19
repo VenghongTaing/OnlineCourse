@@ -1,18 +1,12 @@
 package com.example.onlinecourse;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.tabs.TabItem;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private Toolbar mToolbar;
     private FloatingActionButton Fab_add;
@@ -21,13 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        Intent show_loginform = new Intent(MainActivity.this, LoginForm.class);
-//        Intent show_signupform = new  Intent(MainActivity.this, Signup.class);
-//        startActivity(show_signupform);
-
-        //start activity with dashboard
-//        Intent show_dashboard = new Intent(MainActivity.this, Dashboard.class);
-//        startActivity(show_dashboard);
+        Intent show_loginform = new Intent(MainActivity.this, NewLoginForm.class);
+        Intent show_signupform = new Intent(MainActivity.this, Signup.class);
+        Intent show_menuForm = new Intent(MainActivity.this, customNavigation.class);
+        startActivity(show_menuForm);
+        addListenerOnButtonClick();
 
         mToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mToolbar);
@@ -39,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void addListenerOnButtonClick() {
+
+
+    }
     //Set the menu to the toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
