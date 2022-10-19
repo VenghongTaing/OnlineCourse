@@ -20,7 +20,6 @@ import java.util.List;
 
 public class Dashboard extends AppCompatActivity {
 
-    private Toolbar mToolbar;
     private Toolbar mToolbarBottom;
     private ViewPager mViewPager;
     private TabLayout mTabLayout;
@@ -34,9 +33,6 @@ public class Dashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-
-        mToolbar = (Toolbar) findViewById(R.id.main_toolbar);
-        setSupportActionBar(mToolbar);
 
         mToolbarBottom = (Toolbar) findViewById(R.id.tabToolBar);
         setSupportActionBar(mToolbarBottom);
@@ -54,28 +50,17 @@ public class Dashboard extends AppCompatActivity {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(courseFragment, "Courses");
         viewPagerAdapter.addFragment(myLearningFragment, "My Learning");
-        viewPagerAdapter.addFragment(profileFragment, "Profile");
+        viewPagerAdapter.addFragment(profileFragment, "Cart");
         mViewPager.setAdapter(viewPagerAdapter);
 
 //Set up TabLayout Icon with array index
         mTabLayout.getTabAt(0).setIcon(R.drawable.ic_baseline_library_books_24);
         mTabLayout.getTabAt(1).setIcon(R.drawable.ic_baseline_collections_bookmark_24);
-        mTabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_person_24);
+        mTabLayout.getTabAt(2).setIcon(R.drawable.ic_baseline_shopping_cart_24);
 
 //        BadgeDrawable badgeDrawable = mTabLayout.getTabAt(0).getOrCreateBadge();
 //        badgeDrawable.setVisible(true);
 //        badgeDrawable.setNumber(99);
-    }
-
-    //Set the menu to the toolbar
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-
-        getSupportActionBar().setTitle("Student Management System");
-        getMenuInflater().inflate(R.menu.menu, menu);
-
-        return true;
     }
 
     //Using ViewPagerAdapter to stores the fragments(Page content) and titles
