@@ -34,7 +34,7 @@ public class customNavigation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_navigation);
+        setContentView(R.layout.custom_navigation);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         nav = (NavigationView) findViewById(R.id.navmenu);

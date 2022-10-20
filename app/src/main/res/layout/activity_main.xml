@@ -7,66 +7,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--Set ScrollView when user scrolling-->
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nestedScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+<!--    &lt;!&ndash;Set ScrollView when user scrolling&ndash;&gt;-->
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/nestedScrollView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="512dp"
-            android:paddingBottom="512dp" />
-    </androidx.core.widget.NestedScrollView>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="512dp"-->
+<!--            android:paddingBottom="512dp" />-->
+<!--    </androidx.core.widget.NestedScrollView>-->
 
-    <!--Top app bar size and background color-->
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
-        android:backgroundTint="@color/colorPrimaryDark"
-        app:liftOnScroll="true">
+<!--    &lt;!&ndash;Top app bar size and background color&ndash;&gt;-->
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Light"-->
+<!--        android:backgroundTint="@color/colorPrimaryDark"-->
+<!--        app:liftOnScroll="true">-->
 
-        <!--Set up Top tool bar background scrolling animation and color-->
-        <com.google.android.material.appbar.CollapsingToolbarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:expandedTitleGravity="bottom"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:contentScrim="?attr/colorOnPrimary"
-            app:scrimAnimationDuration="300">
+<!--        &lt;!&ndash;Set up Top tool bar background scrolling animation and color&ndash;&gt;-->
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:expandedTitleGravity="bottom"-->
+<!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+<!--            app:contentScrim="?attr/colorOnPrimary"-->
+<!--            app:scrimAnimationDuration="300">-->
 
-            <!--Set image on background for scrolling-->
-            <!--Collapse Parallax use for scrolling animation position-->
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:src="@drawable/side_nav_bar"
-                android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax"
-                app:layout_collapseParallaxMultiplier="0.7"/>
+<!--            &lt;!&ndash;Set image on background for scrolling&ndash;&gt;-->
+<!--            &lt;!&ndash;Collapse Parallax use for scrolling animation position&ndash;&gt;-->
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:src="@drawable/side_nav_bar"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                app:layout_collapseMode="parallax"-->
+<!--                app:layout_collapseParallaxMultiplier="0.7"/>-->
 
-            <!--Pin Toolbar on top-->
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/main_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"/>
+<!--            &lt;!&ndash;Pin Toolbar on top&ndash;&gt;-->
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/main_toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                app:layout_collapseMode="pin"/>-->
 
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
 
-<!--Add button below AppBarLayout-->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_baseline_add_24"
-        app:layout_anchor="@id/nestedScrollView"
-        app:layout_anchorGravity="bottom|end|center" />
+<!--&lt;!&ndash;Add button below AppBarLayout&ndash;&gt;-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab_add"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/ic_baseline_add_24"-->
+<!--        app:layout_anchor="@id/nestedScrollView"-->
+<!--        app:layout_anchorGravity="bottom|end|center" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -32,7 +32,7 @@ public class CourseManage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coursemange);
+        setContentView(R.layout.coursemange);
 
         mToolbarBottom = (Toolbar) findViewById(R.id.tabToolBar);
         setSupportActionBar(mToolbarBottom);
