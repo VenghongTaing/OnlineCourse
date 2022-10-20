@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.Menu;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -26,6 +27,7 @@ public class CourseManage extends AppCompatActivity {
     private MyLearningFragment myLearningFragment;
     private CartFragment cartFragment;
 
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,9 @@ public class CourseManage extends AppCompatActivity {
 
         mToolbarBottom = (Toolbar) findViewById(R.id.tabToolBar);
         setSupportActionBar(mToolbarBottom);
+
+        mToolbar = (Toolbar) findViewById(R.id.tabToolBar);
+        setSupportActionBar(mToolbar);
 
         mViewPager = findViewById(R.id.view_pager);
         mTabLayout = findViewById(R.id.tabLayout);
@@ -98,5 +103,15 @@ public class CourseManage extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return fragmentTitles.get(position);
         }
+    }
+
+    //Set the menu to the toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        super.onCreateOptionsMenu(menu);
+
+        getMenuInflater().inflate(R.menu.menu, menu);
+
+        return true;
     }
 }
