@@ -56,10 +56,6 @@ public class customNavigation extends AppCompatActivity {
                         Intent push_dashboard = new Intent(customNavigation.this, CourseManage.class);
                         startActivity(push_dashboard);
                         break;
-                    case R.id.menu_call:
-                        Toast.makeText(getApplicationContext(), "Call panel is open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
                     case R.id.menu_setting:
                         Toast.makeText(getApplicationContext(), "Setting panel is open", Toast.LENGTH_LONG).show();
                         drawerLayout.closeDrawer(GravityCompat.START);
