@@ -34,7 +34,7 @@ public class customNavigation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_custom_navigation);
+        setContentView(R.layout.custom_navigation);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         nav = (NavigationView) findViewById(R.id.navmenu);
@@ -55,10 +55,6 @@ public class customNavigation extends AppCompatActivity {
                     case R.id.menu_course:
                         Intent push_dashboard = new Intent(customNavigation.this, CourseManage.class);
                         startActivity(push_dashboard);
-                        break;
-                    case R.id.menu_call:
-                        Toast.makeText(getApplicationContext(), "Call panel is open", Toast.LENGTH_LONG).show();
-                        drawerLayout.closeDrawer(GravityCompat.START);
                         break;
                     case R.id.menu_setting:
                         Toast.makeText(getApplicationContext(), "Setting panel is open", Toast.LENGTH_LONG).show();
