@@ -28,7 +28,7 @@ public class LoginForm extends AppCompatActivity {
             //check if username and password is correct
             if (usernameValue.equals("admin") && passwordValue.equals("admin")) {
                 //go to activity_dashboard
-                Intent intent = new Intent(LoginForm.this, Dashboard.class);
+                Intent intent = new Intent(LoginForm.this, CourseManage.class);
                 startActivity(intent);
             }
         });

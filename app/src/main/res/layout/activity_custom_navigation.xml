@@ -19,7 +19,6 @@
             android:background="#45615F"
             app:title="Online Course Navigation"
             app:titleTextColor="@color/cardview_light_background"
-
             />
     </RelativeLayout>
 

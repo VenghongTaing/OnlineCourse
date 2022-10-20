@@ -10,15 +10,13 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.view.Menu;
 
-import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dashboard extends AppCompatActivity {
+public class CourseManage extends AppCompatActivity {
 
     private Toolbar mToolbarBottom;
     private ViewPager mViewPager;
@@ -32,7 +30,7 @@ public class Dashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
+        setContentView(R.layout.activity_coursemange);
 
         mToolbarBottom = (Toolbar) findViewById(R.id.tabToolBar);
         setSupportActionBar(mToolbarBottom);
