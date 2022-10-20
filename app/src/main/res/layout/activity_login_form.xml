@@ -23,7 +23,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/edit"
         android:drawableLeft="@drawable/i_username"
         android:drawablePadding="15dp"
@@ -114,43 +117,43 @@
         android:textColor="@color/white"
         android:textSize="19dp" />
 
-    <TextView
-        android:id="@+id/others"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/socialicons"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:text="Or Login with"
-        android:textColor="@color/white"
-        android:textSize="19dp"
-        android:textStyle="bold"
+    <!--    <TextView-->
+    <!--        android:id="@+id/others"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_above="@id/socialicons"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:text="Or Login with"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="19dp"-->
+    <!--        android:textStyle="bold"-->
 
-        />
+    <!--        />-->
 
-    <LinearLayout
-        android:id="@+id/socialicons"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:gravity="center">
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/socialicons"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:gravity="center">-->
 
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/google_small" />
+    <!--        <ImageView-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:src="@drawable/google_small" />-->
 
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/facebook" />
+    <!--        <ImageView-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:src="@drawable/facebook" />-->
 
-        <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/twitter" />
-    </LinearLayout>
+    <!--        <ImageView-->
+    <!--            android:layout_width="48dp"-->
+    <!--            android:layout_height="48dp"-->
+    <!--            android:src="@drawable/twitter" />-->
+    <!--    </LinearLayout>-->
 
     <TextView
         android:id="@+id/noHaveAccount"
