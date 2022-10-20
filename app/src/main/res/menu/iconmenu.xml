@@ -6,9 +6,6 @@
     <item android:id="@+id/menu_course"
         android:icon="@drawable/ic_baseline_library_books_24"
         android:title="Course"/>
-    <item android:id="@+id/menu_call"
-        android:icon="@drawable/ic_baseline_call_24"
-        android:title="Call"/>
     <item android:id="@+id/menu_report"
         android:icon="@drawable/ic_baseline_request_quote_24"
         android:title="Report"/>

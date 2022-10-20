@@ -11,10 +11,12 @@ public class LoginForm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_form);
+        setContentView(R.layout.login_form);
 
         //get edittext txt_username
         EditText username = (EditText) findViewById(R.id.txt_username);
+        //set username singleline
+        username.setSingleLine();
 
         //get edittext txt_password
         EditText password = (EditText) findViewById(R.id.txt_password);
@@ -28,8 +30,8 @@ public class LoginForm extends AppCompatActivity {
             //check if username and password is correct
             if (usernameValue.equals("admin") && passwordValue.equals("admin")) {
                 //go to activity_dashboard
-                Intent intent = new Intent(LoginForm.this, CourseManage.class);
-                startActivity(intent);
+                Intent show_menuForm = new Intent(LoginForm.this, customNavigation.class);
+                startActivity(show_menuForm);
             }
         });
 
