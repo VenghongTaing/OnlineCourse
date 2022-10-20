@@ -13,7 +13,21 @@
         android:theme="@style/Theme.OnlineCourse"
         tools:targetApi="31">
         <activity
-            android:name=".Dashboard"
+            android:name=".customNavigation"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".NewLoginForm"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CourseManage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
