@@ -27,7 +27,12 @@
             android:id="@+id/tabToolBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:backgroundTint="?attr/colorOnPrimary"
+            android:background="?attr/colorOnPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Course Manage"
+            app:titleTextColor="@android:color/black"
             />
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"

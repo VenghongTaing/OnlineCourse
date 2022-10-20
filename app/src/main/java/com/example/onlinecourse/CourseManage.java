@@ -24,7 +24,7 @@ public class CourseManage extends AppCompatActivity {
 
     private CourseFragment courseFragment;
     private MyLearningFragment myLearningFragment;
-    private ProfileFragment profileFragment;
+    private CartFragment cartFragment;
 
 
     @Override
@@ -40,7 +40,7 @@ public class CourseManage extends AppCompatActivity {
 
         courseFragment = new CourseFragment();
         myLearningFragment = new MyLearningFragment();
-        profileFragment = new ProfileFragment();
+        cartFragment = new CartFragment();
 
         mTabLayout.setupWithViewPager(mViewPager);
 
@@ -48,7 +48,7 @@ public class CourseManage extends AppCompatActivity {
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager(), 0);
         viewPagerAdapter.addFragment(courseFragment, "Courses");
         viewPagerAdapter.addFragment(myLearningFragment, "My Learning");
-        viewPagerAdapter.addFragment(profileFragment, "Cart");
+        viewPagerAdapter.addFragment(cartFragment, "Cart");
         mViewPager.setAdapter(viewPagerAdapter);
 
 //Set up TabLayout Icon with array index
@@ -59,6 +59,12 @@ public class CourseManage extends AppCompatActivity {
 //        BadgeDrawable badgeDrawable = mTabLayout.getTabAt(0).getOrCreateBadge();
 //        badgeDrawable.setVisible(true);
 //        badgeDrawable.setNumber(99);
+
+        //set event for navigationicon back
+        mToolbarBottom.setNavigationOnClickListener(v -> {
+            //Back button on click event
+            onBackPressed();
+        });
     }
 
     //Using ViewPagerAdapter to stores the fragments(Page content) and titles

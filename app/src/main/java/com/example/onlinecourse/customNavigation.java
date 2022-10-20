@@ -29,7 +29,7 @@ public class customNavigation extends AppCompatActivity {
 
     private CourseFragment courseFragment;
     private MyLearningFragment myLearningFragment;
-    private ProfileFragment profileFragment;
+    private CartFragment profileFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
