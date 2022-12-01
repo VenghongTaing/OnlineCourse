@@ -64,5 +64,12 @@ public class customNavigation extends AppCompatActivity {
                 return true;
             }
         });
+
+        //fab onClick push to page CourseManage
+        findViewById(R.id.fab).setOnClickListener(v -> {
+            Intent push_dashboard = new Intent(customNavigation.this, CourseManage.class);
+            startActivity(push_dashboard);
+        });
+
     }
 }

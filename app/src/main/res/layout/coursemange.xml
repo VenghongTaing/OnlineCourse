@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
     tools:context=".CourseManage">
 
     <!--Set ScrollView when user scrolling-->
@@ -36,6 +37,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
+
+<!--    fab button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="@color/teal_200"
+        app:layout_anchor="@id/view_pager"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="com.google.android.material.floatingactionbutton.FloatingActionButton$Behavior"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
